@@ -1,1 +1,163 @@
-Trial1
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Html Elements</title>
+	<style type="text/css">
+		table, th, td {
+			border: 2px solid green;
+			border-collapse: collapse;
+		}
+
+		td, th {
+			padding: 15px; <!-- // Cell padding specifies the space between the cell content and its borders. --.
+		}
+		/*This adds a background color on every other table row to get a nice zebra stripes effect.
+
+		tr:nth-child(even) {
+			background-color: #D6EEEE;
+		}*/
+
+/*		<!-- // This adds color to odd table head and table data -->*/
+		th:nth-child(odd), td:nth-child(odd) {
+			background-color: #D6EEEE;
+		}
+
+		
+	</style>
+</head>
+<body>
+
+	<p>This is my first trial in web development html</p>
+	<h1>This is the biggest heading</h1>
+	<h6>This is the smallest heading</h6><br>
+	<a href="https://www.w3schools.com/html/html_intro.asp">This is a link to W3schools html tutorial</a>
+
+	<p>This is a shoe<img src="webImages/img1.jpg" alt="A grey shoe" width="150px" height="100px"></p>
+	<br>
+	<p>This is a table where the table headinds are horizontal</p>
+
+	<table width="50%">
+		<tr>
+			<th>Name</th>
+			<th width="50%">Age</th>
+			<th>Department</th>
+		</tr>
+		<tr>
+			<td>Breina</td>
+			<td>22</td>
+			<td>Accounting</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>27</td>
+			<td>Engineering</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<p>This is another table where the table headings are vertical</p>
+	<table width="50%">
+		<tr>
+			<th>Firtname</th>
+			<td>Breina</td>
+			<td>Peter</td>
+		</tr>
+		<tr>
+			<th>Lastname</th>
+			<td>Juma</td>
+			<td>Musyoka</td>
+		</tr>
+		<tr>
+			<th>Age</th>
+			<td>22</td>
+			<td>27</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<p>This table shows how you divide one header into two or more columns</p>
+	<table width="50%">
+		<caption ><strong>PERSONAL INFORMATION</strong></caption> <!-- // The heading of the table -->
+		<tr>
+			<th colspan="2">Name</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Breina</td>
+			<td>Juma</td>
+			<td>22</td>
+		</tr>
+		<tr>
+			<td>Peter</td>
+			<td>Musyoka</td>
+			<td>27</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<p>This table has header both horizontally and vertically</p>
+	<table>
+		<caption><strong>DELIVERY SLOTS</strong></caption>
+		<tr>
+			<th scope="col">January</th>
+			<th scope="col">February</th>
+			<th scope="col">March</th>
+		</tr>
+		<tr>
+			<th scope="row">Monday</th>
+			<td>Open</td>
+			<td>Open</td>
+			<td>Closed</td>
+		</tr>
+		<tr>
+			<th scope="row">Tuesday</th>
+			<td>Open</td>
+			<td>Open</td>
+			<td>Open</td>
+		</tr>
+	</table>
+
+	<br>
+	<!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
+	<u><p>Lists</p></u>
+	<ul>
+		<u><p>This is an unordered list of fruits</p></u>
+		<li>Banana</li>
+		<li>Mango</li>
+		<li>Pear</li>
+	</ul>
+
+	<br>
+	<ol>
+		<u><p>This is an ordered list of clothes</p></u>
+		<li>Trouser</li>
+		<li>Top</li>
+		<li>Hat</li>
+	</ol>
+	<br>
+
+	<ol>
+		<u><p>Nested lists(list inside list)</p></u>
+		<li>Coffe</li>
+		<ol style="list-style-type: lower-roman;">
+			<li>Black coffee</li>
+			<li>White coffee</li>
+		</ol>
+		<li>Juice</li>
+		<ol style="list-style-type: lower-roman;">
+			<li>Mango Juice</li>
+			<li>Orange Juice</li>
+		</ol>
+	</ol>
+	<br>
+
+	<!-- // The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd> tag describes each term -->
+	<dl>
+	<u><p>Description List</p></u>
+	<dt>Coffe</dt>
+	<dd>-Black hot drink</dd>
+	<dt>Tea</dt>
+	<dd>-White hot drink</dd>
+	</dl>
+</body>
+</html>
