@@ -5,10 +5,10 @@
 </head>
 <body>
 	<form>
-		Firstname:
-		<input type="text" name="fname"><br><br>
-		LastName:
-		<input type="text" name="lname"><br><br>
+		<label for="firstname">FirstName:</label>
+		<input type="text" name="fname" id="firstname"><br><br>
+		<label for="lastname">LasttName:</label>
+		<input type="text" name="lname" id="lastname"><br><br>
 		Email:
 		<input type="Email" name="myEmail"><br><br>
 		Date of Birth:
@@ -19,11 +19,20 @@
 		<input type="radio" name="myGender">
 		Other
 		<input type="radio" name="myGender"><br><br>
+		<label for="country">Select your Country:</label>
+		<select name="myCountry" id="country">
+			<option value="kenya">Kenya</option>
+			<option value="uganda">Uganda</option>
+			<option value="tanzania">Tanzania</option>
+		</select><br><br>
+		Write about yourself: <br>
+		<textarea cols="50" rows="10"></textarea><br>
 		<input type="submit" name="submit">
 		<input type="reset" name="reset">
 	</form>
 	<br><br>
-	<!-- // Radio button (select one of many) -->
+	<!-- // Radio button (select one of many). For a radio button the name attribute must be the same -->
+	<!-- // the name attribute in the input tag is what is used in the backend -->
 	<p>Select your Country</p>
 
 	<form>

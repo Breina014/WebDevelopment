@@ -22,6 +22,14 @@
 			background-color: #D6EEEE;
 		}
 
+		body {
+			background-color: beige;
+		}
+
+		/*div {
+			background-color: red;
+		}
+*/
 		
 	</style>
 </head>
@@ -30,11 +38,18 @@
 	<p>This is my first trial in web development html</p>
 	<h1>This is the biggest heading</h1>
 	<h6>This is the smallest heading</h6><br>
-	<a href="https://www.w3schools.com/html/html_intro.asp">This is a link to W3schools html tutorial</a>
+
+	<!--  This is an absolute link. A link to a website that exists on the internet and anyone can access -->
+	<a href="https://www.w3schools.com/html/html_intro.asp" target="_blank">
+		<img src="webImages/img20.jpg" alt="W3schools" width="100px">
+	</a><!-- The target attribute specifies where to open the document.Blank or main opens the linked document in new tab or window.-->
+
+	<p>lorem</p>
 
 	<p>This is a shoe<img src="webImages/img1.jpg" alt="A grey shoe" width="150px" height="100px"></p>
 	<br>
 	<p>This is a table where the table headinds are horizontal</p>
+	<hr>
 
 	<table width="50%">
 		<tr>
@@ -98,11 +113,15 @@
 	<p>This table has header both horizontally and vertically</p>
 	<table>
 		<caption><strong>DELIVERY SLOTS</strong></caption>
+		<thead>
 		<tr>
+			<th></th>
 			<th scope="col">January</th>
 			<th scope="col">February</th>
 			<th scope="col">March</th>
 		</tr>
+		</thead>
+		<tbody>
 		<tr>
 			<th scope="row">Monday</th>
 			<td>Open</td>
@@ -115,9 +134,10 @@
 			<td>Open</td>
 			<td>Open</td>
 		</tr>
+		</tbody>
 	</table>
 
-	<br>
+	<hr>
 	<!-- We used ul for an unordered list and ol for an ordered one. both ordered and unordered lists contain li, or list items. -->
 	<u><p>Lists</p></u>
 	<ul>
@@ -138,7 +158,7 @@
 
 	<ol>
 		<u><p>Nested lists(list inside list)</p></u>
-		<li>Coffe</li>
+		<li>Coffee</li>
 		<ol style="list-style-type: lower-roman;">
 			<li>Black coffee</li>
 			<li>White coffee</li>
@@ -159,5 +179,53 @@
 	<dt>Tea</dt>
 	<dd>-White hot drink</dd>
 	</dl>
+	<br>
+	<hr>
+	<p>This is a paragraph</p>
+	
+	<p>Yet another paragraph</p>
+	<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus unde odit, vero officia suscipit commodi eligendi corporis voluptatum quas voluptatem beatae inventore expedita nemo, quis quasi fugiat debitis asperiores, repellendus!</p>
+
+	<!-- This is a relative lik. A link to something that exists only on your servser and can be accessed by only you or somebody with access to your server -->
+	<a href="/html_tutorial/exe1.html">HTML Forms</a>
+
+	<!-- Absolute image
+	<img src="https://media.istockphoto.com/id/1328646986/photo/living-room-interior-with-stylish-furniture-focus-on-soft-carpet.jpg?s=1024x1024&w=is&k=20&c=1viLmIjOre7oJ9B5G2HxH9_cuHHqFSgFQV7KkTCYD0s="> -->
+
+	<br>
+	<!-- Subcripts and superscripts -->
+	<p>H<sub>2</sub>O is the formula for water</p>
+	<p>2<sup>2</sup>is equal to 4</p>
+	<br>
+	<hr>
+	<pre>
+		Today
+			is
+			a
+		beautiful day
+	</pre>
+	<br>
+	<div>
+		<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, voluptatibus repellendus enim deleniti doloremque consequatur, deserunt distinctio sunt officiis vel illo autem ducimus eum optio. Modi nulla possimus, animi quis!</p>
+	</div>
+	<div style="background-color: aliceblue;">
+		<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Numquam nobis dolore, id, at nostrum similique exercitationem repellat, fugiat ipsam corrupti quam harum! Nisi inventore temporibus perferendis, repellat quia atque iure, cum molestiae ipsam fugit provident velit tempore itaque eum exercitationem?</p>
+	</div>
+
+	<!-- Inline elements
+	<a href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=6584s">CodewithHarry</a>
+	<a href="https://www.youtube.com/watch?v=BsDoLVMnmZs&t=6584s">CodewithHarry</a> -->
+
+	<span>
+		Hello There
+	</span>
+	<span>
+		How are you
+	</span>
+
+	<!-- Div and span are containers. Div is a block element while span is an inline element -->
+	<!-- The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+	<p>My favourite colour is <span style="background-color: yellow;">blue</span> and partly red</p>
+
 </body>
 </html>

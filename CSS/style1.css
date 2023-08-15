@@ -1,0 +1,38 @@
+body {
+	background-color: black;
+	color: yellow;
+	/*opacity: 0.5;The opacity property specifies the opacity/transparency of an element. It can take a value from 0.0 - 1.0. The lower value, the more transparent:
+	RGBA does not aply opacity to its child elements.0 is the most transparent and 1 the least
+	background-color: rgba(255, 0, 0, 0.2);
+
+	When using the opacity property to add transparency to the background of an element, 
+	all of its child elements inherit the same transparency. 
+	This can make the text inside a fully transparent element hard to read.*/
+
+}
+
+p{
+	color: cyan;
+	font-family: sans-serif;
+	font-size: 20px;
+
+}
+/*For id use #.If there are two selectors sharing the same id specify the selector then #id name*/
+p#para2{
+	color: red;
+}
+/*For class use .*/
+.para1{
+	color: beige;
+}
+
+div
+{
+	background-color: royalblue;
+	border: 5px solid red;
+}
+
+span{
+	font-weight: bold;
+	color: yellow;
+}
